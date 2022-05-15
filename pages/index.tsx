@@ -4,7 +4,6 @@ import { useState } from "react";
 
 export default function Home() {
 
-    const answerOptions = [1, 2, 3, 4]
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const handlePrevious = () => {
         const prevQues = currentQuestion - 1;
@@ -16,8 +15,8 @@ export default function Home() {
         nextQues < questions.length && setCurrentQuestion(nextQues);
     };
 
-    const [selectedOptions, setSelectedOptions] = useState([]);
-    const handleAnswerOption = (answer) => {
+    const [selectedOptions, setSelectedOptions]: any = useState([]);
+    const handleAnswerOption = (answer: any) => {
         setSelectedOptions([
             (selectedOptions[currentQuestion] = { answerByUser: answer }),
         ]);
