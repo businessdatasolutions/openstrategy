@@ -44,13 +44,13 @@ export default function Home() {
 
             {showScore ? (
                 <h1 className="text-3xl font-semibold text-center text-white">
-                Your average score is {score}
+                    Your average score for category <i>{ questions[currentQuestion].category }</i> is {score}
                 </h1>
             ) : (
                 <>
                 <div className="flex flex-col items-start w-full">
                     <div className="mt-4 text-2xl text-white">
-                    Category: {questions[currentQuestion].category}
+                    Category: <i>{questions[currentQuestion].category}</i>
                     </div>
                     <h4 className="mt-10 text-xl text-white/60">
                     Question {currentQuestion + 1} of {questions.length}
