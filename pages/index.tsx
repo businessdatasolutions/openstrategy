@@ -15,13 +15,19 @@ export default function Home() {
         nextQues < questions.length && setCurrentQuestion(nextQues);
     };
 
+    const [currentCategory, setCurrentCategory]: any = useState(questions[0].category)
     const [selectedOptions, setSelectedOptions]: any = useState([]);
+    const [scoreBoard, setScoreBoard] = useState(new Map())
     const handleAnswerOption = (answer: any) => {
         setSelectedOptions([
             (selectedOptions[currentQuestion] = { answerByUser: answer }),
         ]);
         setSelectedOptions([...selectedOptions]);
-        console.log(selectedOptions);
+        console.log(selectedOptions)
+        setCurrentCategory(questions[currentQuestion].category)
+        console.log(currentCategory)
+        setScoreBoard(scoreBoard.set(currentCategory, selectedOptions))
+        console.log(scoreBoard)
     };
 
     const [score, setScore] = useState(0);
@@ -30,9 +36,9 @@ export default function Home() {
     const handleSubmitButton = () => {
         let newScore = 0;
         for (let i = 0; i < questions.length; i++) {       
-                (newScore += selectedOptions[i].answerByUser)
+            (newScore += selectedOptions[i].answerByUser)
         }
-        setScore(Math.round(10*newScore / questions.length)/10);
+        setScore(Math.round(10 * newScore / questions.length) / 10);
         setShowScore(true);
     };
     
@@ -44,7 +50,7 @@ export default function Home() {
 
             {showScore ? (
                 <h1 className="text-3xl font-semibold text-center text-white">
-                    Your average score for category <i>{ questions[currentQuestion].category }</i> is {score}
+                    Your average score is {score}
                 </h1>
             ) : (
                 <>
