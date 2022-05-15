@@ -1,0 +1,38 @@
+[
+    {
+        "category": "Letting loose mindset",
+        "answerOptions": [
+        { "answer": 1, "text": "When confronted with a problem, I think first what I have to do to solve it."},
+        { "answer": 2, "text": ""},
+        { "answer": 3, "text": ""},
+        { "answer": 4, "text": "When confronted with a problem, I think first whom I have to involve to solve it."}
+        ]
+    },
+    {
+        "category": "Letting loose mindset",
+        "answerOptions": [
+        { "answer": 1, "text": "I tend to give the answers to difficult situations myself."},
+        { "answer": 2},
+        { "answer": 3},
+        { "answer": 4, "text": "I wait and collect the input of others before giving answers to difficult situations."}
+        ]
+    },
+    {
+        "category": "Letting loose mindset",
+        "answerOptions": [
+        { "answer": 1, "text": "I feel uncomfortable sharing information as I think there is a lot to lose."},
+        { "answer": 2, "text": ""},
+        { "answer": 3, "text": ""},
+        { "answer": 4, "text": "I feel comfortable sharing information as I am convinced that the benefits outweigh the risks."}
+        ]
+    },
+    {
+        "category": "Letting loose mindset",
+        "answerOptions": [
+        { "answer": 1, "text": "I prefer to come to a quick agreement as situations of disagreements make me feel uncomfortable."},
+        { "answer": 2, "text": ""},
+        { "answer": 3, "text": ""},
+        { "answer": 4, "text": "I am comfortable with disagreements as they are opportunities for learning."}
+        ]
+    }
+]
