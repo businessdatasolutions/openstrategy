@@ -65,7 +65,7 @@ export default function Home() {
                     >
                         <input
                         type="radio"
-                        name={answer.answer}
+                        name={answer.answer.toString()}
                         value={answer.answer}
                         checked={
                             answer.answer === selectedOptions[currentQuestion]?.answerByUser
